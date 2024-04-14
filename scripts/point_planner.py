@@ -63,42 +63,42 @@ if __name__ == '__main__':
 
                     # Point 1
                     plan_point1 = Twist()
-                    plan_point1.linear.x = -0.4
-                    plan_point1.linear.y = -0.23
-                    plan_point1.linear.z = 0.5
+                    plan_point1.linear.x = 0.13
+                    plan_point1.linear.y = -0.7
+                    plan_point1.linear.z = 0.43
                     plan_point1.angular.x = 3.14
-                    plan_point1.angular.y = 0.0
-                    plan_point1.angular.z = 1.57
+                    plan_point1.angular.y = 0
+                    plan_point1.angular.z = 3.14
                     plan.points.append(plan_point1)
 
                     # Add the transformed ball position as point 2
                     plan_point2 = Twist()
                     plan_point2.linear.x = ball_x_base
                     plan_point2.linear.y = ball_y_base
-                    plan_point2.linear.z = ball_z_base
+                    plan_point2.linear.z = ball_z_base+0.01
                     plan_point2.angular.x = 3.14
                     plan_point2.angular.y = 0.0
-                    plan_point2.angular.z = 1.57
+                    plan_point2.angular.z = 3.14
                     plan.points.append(plan_point2)
                     
                     # Point 3
                     plan_point3 = Twist()
-                    plan_point3.linear.x = -0.7
-                    plan_point3.linear.y = -0.23
-                    plan_point3.linear.z = 0.5
+                    plan_point3.linear.x = -0.13
+                    plan_point3.linear.y = -0.7
+                    plan_point3.linear.z = 0.43
                     plan_point3.angular.x = 3.14
                     plan_point3.angular.y = 0.0
-                    plan_point3.angular.z = 1.57
+                    plan_point3.angular.z = 3.14
                     plan.points.append(plan_point3)
 
                     # Point 4
                     plan_point4 = Twist()
-                    plan_point4.linear.x = -0.7
-                    plan_point4.linear.y = -0.23
-                    plan_point4.linear.z = 0.1
+                    plan_point4.linear.x = -0.13
+                    plan_point4.linear.y = -0.7
+                    plan_point4.linear.z = ball_z_base+0.01
                     plan_point4.angular.x = 3.14
                     plan_point4.angular.y = 0.0
-                    plan_point4.angular.z = 1.57
+                    plan_point4.angular.z = 3.14
                     plan.points.append(plan_point4)
 
                     # Publish the plan
